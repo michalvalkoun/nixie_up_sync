@@ -1,4 +1,4 @@
-# paja
+# Nixie Up&Sync
 
 A new Flutter project.
 
