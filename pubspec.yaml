@@ -29,8 +29,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_blue: ^0.8.0
-  flutter_nordic_dfu: ^3.0.0
+  flutter_blue:
+    git:
+      url: git@github.com:espresso3389/flutter_blue.git
+  
+  nordic_dfu: ^3.3.0
   google_fonts: ^2.2.0
 
 

@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_blue/flutter_blue.dart';
-import 'package:flutter_nordic_dfu/flutter_nordic_dfu.dart';
+import 'package:nordic_dfu/nordic_dfu.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -81,7 +81,7 @@ class _MyAppState extends State<MyApp> {
                           scanResult: scanResults[index],
                           onDFU: dfuRunning
                               ? () async {
-                                  await FlutterNordicDfu.abortDfu();
+                                  await NordicDfu.abortDfu();
                                   setState(() {
                                     dfuRunningInx = null;
                                   });
@@ -132,8 +132,7 @@ class _MyAppState extends State<MyApp> {
     stopScan();
     dfuRunning = true;
     try {
-      await FlutterNordicDfu.startDfu(deviceId, 'assets/1.8.zip',
-          fileInAsset: true);
+      await NordicDfu.startDfu(deviceId, 'assets/1.8.zip', fileInAsset: true);
       dfuRunning = false;
     } catch (e) {
       dfuRunning = false;

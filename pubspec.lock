@@ -114,9 +114,11 @@ packages:
   flutter_blue:
     dependency: "direct main"
     description:
-      name: flutter_blue
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "."
+      ref: HEAD
+      resolved-ref: "9758034dc41956d7edd3b6917f3ed3dd9eab5ef1"
+      url: "git@github.com:espresso3389/flutter_blue.git"
+    source: git
     version: "0.8.0"
   flutter_launcher_icons:
     dependency: "direct dev"
@@ -132,13 +134,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.4"
-  flutter_nordic_dfu:
-    dependency: "direct main"
-    description:
-      name: flutter_nordic_dfu
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "3.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -193,6 +188,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.7.0"
+  nordic_dfu:
+    dependency: "direct main"
+    description:
+      name: nordic_dfu
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.3.0"
   path:
     dependency: transitive
     description:
@@ -290,7 +292,7 @@ packages:
       name: rxdart
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.26.0"
+    version: "0.27.3"
   sky_engine:
     dependency: transitive
     description: flutter
